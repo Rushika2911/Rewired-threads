@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Set New Password</title>
+  <link rel="stylesheet" href="/forgotpassStyle.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <div class="logo">
+        <span class="circle">C</span> <strong>Clothing.</strong>
+      </div>
+      <h2>Set new password</h2>
+      <p class="subtitle">Must be at least 8 character</p>
+
+      <form method="POST" action="/api/forgotpass" id="reset-form">
+        <label>Email *</label>
+        <div class="password-field">
+          <input type="email" name="email" placeholder="Enter email" required />
+          <span class="eye-icon">👁️</span>
+        </div>
+
+        <label>Password *</label>
+        <div class="password-field">
+          <input type="password" name="password" placeholder="Enter Password" required />
+          <span class="eye-icon">👁️</span>
+        </div>
+
+        <label>Confirm Password *</label>
+        <div class="password-field">
+          <input type="password" name="confirmPassword" placeholder="Enter Password" required />
+          <span class="eye-icon">👁️</span>
+        </div>
+
+        <button type="submit" class="btn">Reset Password</button>
+      </form>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <div class="testimonial">
+        <img src="https://images.unsplash.com/photo-1583864697784-c71b57952736" alt="Fashion Model" />
+        <div class="quote-box">
+          <p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.”</p>
+          <h4>Leslie Alexander</h4>
+          <span>Fashion Enthusiast</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

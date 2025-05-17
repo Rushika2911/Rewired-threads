@@ -1,0 +1,974 @@
+<%- include("includes/navbar.ejs") %>
+<link rel="stylesheet" href="/shopStyle.css">
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="dots dots-top-right"></div>
+  <div class="dots dots-bottom-left"></div>
+  <h1>Shop</h1>
+  <div class="breadcrumb"><a href="#">Home</a> / Shop</div>
+</section>
+
+<!-- Shop Content -->
+<div class="shop-container">
+  <!-- Filters -->
+  <aside class="filters">
+    <div class="filter-section">
+      <h3 class="filter-title">Filter Options</h3>
+    </div>
+
+    <div class="filter-section">
+      <h3 class="filter-title">Category</h3>
+      <div class="filter-options">
+        <div class="checkbox-container">
+          <input type="checkbox" id="men" />
+          <label for="men">Men</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="women" checked />
+          <label for="women">Women</label>
+        </div>
+        <div class="checkbox-container" style="margin-left: 20px">
+          <input type="checkbox" id="tshirts" />
+          <label for="tshirts">T-Shirts</label>
+        </div>
+        <div class="checkbox-container" style="margin-left: 20px">
+          <input type="checkbox" id="handbags" />
+          <label for="handbags">Handbags</label>
+        </div>
+        <div class="checkbox-container" style="margin-left: 20px">
+          <input type="checkbox" id="jackets" />
+          <label for="jackets">Jackets and Coats</label>
+        </div>
+        <div class="checkbox-container" style="margin-left: 20px">
+          <input type="checkbox" id="watches" />
+          <label for="watches">Watches</label>
+        </div>
+        <div class="checkbox-container" style="margin-left: 20px">
+          <input type="checkbox" id="hat" />
+          <label for="hat">Hat</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h3 class="filter-title">Price</h3>
+      <div class="price-range">
+        <span>$25.00</span>
+        <span>$125.00</span>
+      </div>
+      <div class="slider-container">
+        <div class="slider-progress"></div>
+        <div class="slider-thumb thumb-left"></div>
+        <div class="slider-thumb thumb-right"></div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h3 class="filter-title">Color</h3>
+      <div class="filter-options">
+        <div class="color-option">
+          <div class="color-circle black"></div>
+          <span>Black</span>
+        </div>
+        <div class="color-option">
+          <div class="color-circle grey"></div>
+          <span>Grey</span>
+        </div>
+        <div class="color-option">
+          <div class="color-circle green"></div>
+          <span>Green</span>
+        </div>
+        <div class="color-option">
+          <div class="color-circle red"></div>
+          <span>Red</span>
+        </div>
+        <div class="color-option">
+          <div class="color-circle orange"></div>
+          <span>Orange</span>
+        </div>
+        <div class="color-option">
+          <div class="color-circle blue"></div>
+          <span>Blue</span>
+        </div>
+        <div class="color-option">
+          <div class="color-circle pink"></div>
+          <span>Pink</span>
+        </div>
+        <div class="color-option">
+          <div class="color-circle white"></div>
+          <span>White</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h3 class="filter-title">Size</h3>
+      <div class="filter-options">
+        <div class="checkbox-container">
+          <input type="checkbox" id="size-s" />
+          <label for="size-s">S</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="size-m" checked />
+          <label for="size-m">M</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="size-l" />
+          <label for="size-l">L</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="size-xl" />
+          <label for="size-xl">XL</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="size-xxl" />
+          <label for="size-xxl">XXL</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="size-xxxl" />
+          <label for="size-xxxl">XXXL</label>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Products Area -->
+  <main class="products-area">
+    <div class="products-header">
+      <div class="showing-results">Showing 1-12 of 240 results</div>
+      <div class="sort-dropdown">
+        Sort by:
+        <select>
+          <option>Default Sorting</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest First</option>
+          <option>Popularity</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="active-filters">
+      <div class="filter-tag">
+        <span>Active Filter</span>
+        <span class="remove-filter">×</span>
+      </div>
+      <div class="filter-tag">
+        <span>Women</span>
+        <span class="remove-filter">×</span>
+      </div>
+      <div class="filter-tag">
+        <span>Black</span>
+        <span class="remove-filter">×</span>
+      </div>
+      <div class="filter-tag">
+        <span>M</span>
+        <span class="remove-filter">×</span>
+      </div>
+      <div class="filter-tag">
+        <span>Price : $25.00 - $125.00</span>
+        <span class="remove-filter">×</span>
+      </div>
+      <span class="clear-all">Clear All</span>
+    </div>
+
+    <div class="products-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #65c466">
+          50% off
+        </div>
+        <img
+          src="/43664492-3c21-4d0b-9ccc-040dea879e1e.jpeg"
+          alt="Trendy Brown Coat"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Coats</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>4.8</span>
+          </div>
+          <h3 class="product-title">Trendy Brown Coat</h3>
+          <div class="product-price">
+            <div class="current-price">$75.00</div>
+            <div class="original-price">$150.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #f8b653">
+          25% off
+        </div>
+        <img
+          src="/62275fde-1c7c-42e5-9cf1-c5b6062155e7.jpeg"
+          alt="Classy Light Coat"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Coats</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>4.9</span>
+          </div>
+          <h3 class="product-title">Classy Light Coat</h3>
+          <div class="product-price">
+            <div class="current-price">$165.00</div>
+            <div class="original-price">$220.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #5da0e0">
+          10% off
+        </div>
+        <img
+          src="/For instant elevation, make it PLT Label_ Style….jpeg"
+          alt="Modern Brown Dress"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Dresses</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>4.8</span>
+          </div>
+          <h3 class="product-title">Modern Brown Dress</h3>
+          <div class="product-price">
+            <div class="current-price">$90.00</div>
+            <div class="original-price">$100.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #f8b653">
+          25% off
+        </div>
+        <img
+          src="/25 Modern Funeral Outfits for Teenage Girls.jpeg"
+          alt="Modern Black Dress"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Dresses</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>4.9</span>
+          </div>
+          <h3 class="product-title">Modern Black Dress</h3>
+          <div class="product-price">
+            <div class="current-price">$75.00</div>
+            <div class="original-price">$100.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #5da0e0">
+          10% off
+        </div>
+        <img
+          src="/9bc67204-a0c4-423e-8616-6831407b889e.jpeg"
+          alt="Light Brown Sweater"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Sweater</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>4.7</span>
+          </div>
+          <h3 class="product-title">Light Brown Sweater</h3>
+          <div class="product-price">
+            <div class="current-price">$63.00</div>
+            <div class="original-price">$70.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #5da0e0">
+          10% off
+        </div>
+        <img
+          src="/Instagram.jpeg"
+          alt="Classic White Shirt"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Shirt</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>5.0</span>
+          </div>
+          <h3 class="product-title">Classic White Shirt</h3>
+          <div class="product-price">
+            <div class="current-price">$45.00</div>
+            <div class="original-price">$50.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #f8b653">
+          25% off
+        </div>
+        <img
+          src="/dfb9f412-3194-44ac-a853-be3c7c20cb25.jpeg"
+          alt="Dark Yellow Shirt"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Shirt</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>4.8</span>
+          </div>
+          <h3 class="product-title">Dark Yellow Shirt</h3>
+          <div class="product-price">
+            <div class="current-price">$75.00</div>
+            <div class="original-price">$100.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #65c466">
+          30% off
+        </div>
+        <img
+          src="/Elegant White Satin Blouse with Draped Neckline….jpeg"
+          alt="Classic White Shirt"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Shirt</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>4.9</span>
+          </div>
+          <h3 class="product-title">Classic White Shirt</h3>
+          <div class="product-price">
+            <div class="current-price">$70.00</div>
+            <div class="original-price">$100.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #5da0e0">
+          10% off
+        </div>
+        <img
+          src="/Discover the perfect summer look, with our chic….jpeg"
+          alt="Modern White Suit"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Suit</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>4.9</span>
+          </div>
+          <h3 class="product-title">Modern White Suit</h3>
+          <div class="product-price">
+            <div class="current-price">$90.00</div>
+            <div class="original-price">$100.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #5da0e0">
+          10% off
+        </div>
+        <img
+          src="/Blusa Casual Feminina de Manga Curta com Gola de….jpeg"
+          alt="Classic Black Shirt"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Shirt</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>5.0</span>
+          </div>
+          <h3 class="product-title">Classic Black Shirt</h3>
+          <div class="product-price">
+            <div class="current-price">$45.00</div>
+            <div class="original-price">$50.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #65c466">
+          20% off
+        </div>
+        <img
+          src="/b2cda7af-af56-40f6-95cf-49e6c9241f39.jpeg"
+          alt="Light Brown Sweater"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Sweater</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>5.0</span>
+          </div>
+          <h3 class="product-title">Light Brown Sweater</h3>
+          <div class="product-price">
+            <div class="current-price">$64.00</div>
+            <div class="original-price">$80.00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card">
+        <div class="product-badge" style="background-color: #65c466">
+          20% off
+        </div>
+        <img
+          src="/Women's Sweater -Neck Drop Shoulder Ribbed Knit….jpeg"
+          alt="Light Grey Sweater"
+          class="product-image"
+        />
+        <div class="product-actions">
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+          </div>
+          <div class="action-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path
+                d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M7.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Sweater</div>
+          <div class="product-rating">
+            <div class="rating-stars">★★★★★</div>
+            <span>5.0</span>
+          </div>
+          <h3 class="product-title">Light Grey Sweater</h3>
+          <div class="product-price">
+            <div class="current-price">$40.00</div>
+            <div class="original-price">$50.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="#" class="prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+          />
+        </svg>
+      </a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">...</a>
+      <a href="#">10</a>
+      <a href="#" class="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </a>
+    </div>
+  </main>
+</div>
+
+<!-- Features -->
+<section class="features">
+  <div class="features-container">
+    <div class="feature">
+      <div class="feature-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#4e2a10"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+          />
+        </svg>
+      </div>
+      <div class="feature-info">
+        <h3>Free Shipping</h3>
+        <p>Free shipping for order above $180</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#4e2a10"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"
+          />
+        </svg>
+      </div>
+      <div class="feature-info">
+        <h3>Flexible Payment</h3>
+        <p>Multiple secure payment options</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#4e2a10"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"
+          />
+        </svg>
+      </div>
+      <div class="feature-info">
+        <h3>24x7 Support</h3>
+        <p>We support online all days</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include("includes/footer.ejs") %>

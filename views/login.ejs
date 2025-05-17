@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clothing Sign In</title>
+  <link rel="stylesheet" href="/loginStyle.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="logo">
+        <span class="circle">C</span> <strong>Clothing.</strong>
+      </div>
+      <h2>Sign In</h2>
+      <p class="subtitle">Please fill your detail to access your account.</p>
+
+      <% if (error) { %>
+        <p class="error-message" style="color: red; font-size: 0.9rem; margin-bottom: 10px;">
+          <%= error %>
+        </p>
+      <% } %>
+
+      <form method="POST" action="/api/login">
+        <label>Email *</label>
+        <input type="email" name="email" placeholder="Enter Email Address" required />
+
+        <label>Password *</label>
+        <div class="password-wrapper">
+          <input type="password" name="password" id="password" placeholder="Enter Password" required />
+          <span class="toggle" onclick="togglePassword()">👁️</span>
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox" checked /> Remember me</label>
+          <a href="/api/forgotpass">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn">Sign In</button>
+
+        <div class="divider">or Sign In with</div>
+        <button type="button" class="google-btn">Sign In With Google</button>
+
+        <p class="signup">Don’t have an account? <a href="/api/signup">Sign Up</a></p>
+      </form>
+    </div>
+
+    <div class="right-panel">
+      <div class="testimonial">
+        <img src="/5519ed1a-4f78-48e6-bdca-323577c25a37.jpeg" alt="Fashion Woman" />
+        <div class="quote-box">
+          <p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...”</p>
+          <h4>Leslie Alexander</h4>
+          <span>Fashion Enthusiast</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById("password");
+      passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+    }
+  </script>
+</body>
+</html>

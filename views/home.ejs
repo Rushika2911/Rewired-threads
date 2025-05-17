@@ -1,0 +1,439 @@
+<%- include("includes/navbar.ejs") %>
+<link rel="stylesheet" href="/homeStyle.css" />
+<body>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span>50% OFF Summer Sale</span>
+          <h1>Step into Style, Your Ultimate Fashion Destination</h1>
+          <p>
+            Discover the latest trends and express your unique style with our
+            curated collection of fashion essentials.
+          </p>
+          <a href="/api/shop" class="btn">Shop Now</a>
+        </div>
+        <div class="hero-img">
+          <img src="/62275fde-1c7c-42e5-9cf1-c5b6062155e7.jpeg" alt="Hero Image" height="200px"/>
+          <div class="hero-badge">
+            <span>Best</span>
+            <span>Seller</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features container">
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-shipping-fast"></i>
+      </div>
+      <div class="feature-text">
+        <h4>Free Shipping</h4>
+        <p>On all orders over $50</p>
+      </div>
+    </div>
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-medal"></i>
+      </div>
+      <div class="feature-text">
+        <h4>Quality Assurance</h4>
+        <p>100% guaranteed products</p>
+      </div>
+    </div>
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-headset"></i>
+      </div>
+      <div class="feature-text">
+        <h4>24/7 Support</h4>
+        <p>Dedicated support team</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories container">
+    <div class="categories-heading">
+      <h2>Shop Now</h2>
+    </div>
+    <div class="categories-grid">
+      <div class="category-card">
+        <h3>For Women's</h3>
+        <ul class="category-list">
+          <li><i class="fas fa-circle"></i> Dresses</li>
+          <li><i class="fas fa-circle"></i> Blouses</li>
+          <li><i class="fas fa-circle"></i> Jeans</li>
+          <li><i class="fas fa-circle"></i> T-Shirts</li>
+          <li><i class="fas fa-circle"></i> Jumpsuits</li>
+          <li><i class="fas fa-circle"></i> Skirts</li>
+          <li><i class="fas fa-circle"></i> Sweaters</li>
+          <li><i class="fas fa-circle"></i> Jackets</li>
+        </ul>
+        <a href="/api/shop" class="btn-outline">Shop All</a>
+      </div>
+      <div class="category-card">
+        <h3>For Men's</h3>
+        <ul class="category-list">
+          <li><i class="fas fa-circle"></i> Shirts</li>
+          <li><i class="fas fa-circle"></i> T-Shirts</li>
+          <li><i class="fas fa-circle"></i> Jeans</li>
+          <li><i class="fas fa-circle"></i> Trousers</li>
+          <li><i class="fas fa-circle"></i> Jackets</li>
+          <li><i class="fas fa-circle"></i> Hoodies</li>
+          <li><i class="fas fa-circle"></i> Suits</li>
+          <li><i class="fas fa-circle"></i> Sweaters</li>
+        </ul>
+        <a href="/api/shopMen" class="btn-outline">Shop All</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Seller Products Section -->
+  <section class="products container">
+    <div class="products-heading">
+      <h2>Our Top Seller Products</h2>
+      <a href="#" class="btn-outline">View All</a>
+    </div>
+    <div class="products-grid">
+      <div class="product-card" data-product-id="1">
+        <div class="product-img">
+          <img src="/DAZY Epaulettes Design Single Breasted Raglan….jpeg" alt="Product" />
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <span>4.8</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h4>Trendy Brown Coat</h4>
+          <p>Women's Outerwear</p>
+          <div class="product-price">
+            <div>
+              <span class="price">$79.99</span>
+              <span class="old-price">$99.99</span>
+            </div>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="/7d1626a1-1e9d-47ee-b2c1-871a3c369148.jpeg" alt="Product" />
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <span>4.7</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h4>Classic Denim Jacket</h4>
+          <p>Men's Outerwear</p>
+          <div class="product-price">
+            <div>
+              <span class="price">$59.99</span>
+              <span class="old-price">$79.99</span>
+            </div>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="/5a071ab8-259d-41ca-ba48-27eec69c8832.jpeg" alt="Product" />
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <span>4.9</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h4>Modern Boho Dress</h4>
+          <p>Women's Dresses</p>
+          <div class="product-price">
+            <div>
+              <span class="price">$69.99</span>
+              <span class="old-price">$89.99</span>
+            </div>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="/25d115ce-08e6-4891-8a9d-318a85b2cfc8.jpeg" alt="Product" />
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <span>4.6</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h4>Casual Smart Watch</h4>
+          <p>Accessories</p>
+          <div class="product-price">
+            <div>
+              <span class="price">$129.99</span>
+              <span class="old-price">$159.99</span>
+            </div>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals of the Day Section -->
+  <section class="deals container">
+    <div class="deals-heading">
+      <h2>Deals of the Day</h2>
+      <a href="#" class="btn-outline">View All</a>
+    </div>
+    <div class="deals-grid">
+      <div class="deal-card">
+        <div class="deal-img">
+          <img
+            src="/DAZY Women Pleated Solid Color Lapel Loose Shirt….jpeg"
+            alt="Deal"
+          />
+        </div>
+        <div class="deal-info">
+          <span class="deal-tag">25% OFF</span>
+          <h3>Elegant White Blouse</h3>
+          <div class="price">$49.99 <span class="old-price">$65.99</span></div>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+      <div class="deal-card">
+        <div class="deal-img">
+          <img
+            src="/About this item Features_ Mens zipper polo shirts….jpeg"
+            alt="Deal"
+          />
+        </div>
+        <div class="deal-info">
+          <span class="deal-tag">30% OFF</span>
+          <h3>Modern Polo Shirts</h3>
+          <div class="price">$39.99 <span class="old-price">$56.99</span></div>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section class="collections container">
+    <div class="collections-heading">
+      <h2>Limited Time Offer!</h2>
+    </div>
+    <div class="collections-grid">
+      <div class="collection-card">
+        <div class="collection-info">
+          <span>Just Arrived</span>
+          <h3>Men's Latest Collection</h3>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="collection-img">
+          <img
+            src="/Super Stylish Ships In 5-10 Business Days.jpeg"
+            alt="Collection"
+          />
+        </div>
+      </div>
+      <div class="collection-card">
+        <div class="collection-info">
+          <span>New Season</span>
+          <h3>Women's Favorites</h3>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="collection-img">
+          <img
+            src="/25 Modern Funeral Outfits for Teenage Girls.jpeg"
+            alt="Collection"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Section -->
+  <section class="instagram container">
+    <h2>Follow Us On Instagram</h2>
+    <div class="instagram-grid">
+      <div class="insta-img">
+        <img src="/78d5ce7b-b2de-400b-990c-9799c1d4f274.jpeg" alt="Instagram" />
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="insta-img">
+        <img src="/5519ed1a-4f78-48e6-bdca-323577c25a37.jpeg" alt="Instagram" />
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="insta-img">
+        <img
+          src="/Poses para presumir tus outfits – MADLY AESTHETIC.jpeg"
+          alt="Instagram"
+        />
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="insta-img">
+        <img src="/d6ca5cde-19d8-4ccb-a00e-9f9030365591.jpeg" alt="Instagram" />
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials container">
+    <div class="testimonials-heading">
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="testimonials-slider">
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img
+            src="/8715f66c-64fb-44e1-8bd6-1784b0c68576.jpeg"
+            alt="Testimonial"
+          />
+        </div>
+        <div class="testimonial-content">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "I'm absolutely in love with the quality and style of my purchases.
+            The customer service is outstanding, and the shipping was
+            surprisingly fast!"
+          </p>
+          <h4>Sarah Peterson</h4>
+        </div>
+      </div>
+      <div class="slider-dots">
+        <div class="slider-dot active"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog container">
+    <div class="blog-heading">
+      <h2>Our Latest News & Blogs</h2>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="/fc463923-a97a-4a16-b480-f153838110f0.jpeg" alt="Blog" />
+        </div>
+        <div class="blog-content">
+          <span>Fashion Tips</span>
+          <h3>10 Fashion Trends for the Modern Woman</h3>
+          <a href="#" class="btn-outline">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img">
+          <img
+            src="/The Shoe Styles That Always Break Us Out of a….jpeg"
+            alt="Blog"
+          />
+        </div>
+        <div class="blog-content">
+          <span>Fashion Forward</span>
+          <h3>Fashion Forward: Tips, Trends, and Inspiration</h3>
+          <a href="#" class="btn-outline">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img">
+          <img
+            src="/Ready to step into your picnic girl era_ Discover….jpeg"
+            alt="Blog"
+          />
+        </div>
+        <div class="blog-content">
+          <span>Fall Fashion</span>
+          <h3>Fall Fashion Haul - The Ultimate Style Guide</h3>
+          <a href="#" class="btn-outline">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq container">
+    <div class="faq-heading">
+      <h2>Questions? Look here.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question active">
+          <h4>How can I track my order?</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer active">
+          <p>
+            You can track your order by logging into your account and going to
+            the "Order History" section. Alternatively, you can use the tracking
+            number provided in your shipping confirmation email.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Can I exchange an item for a different size?</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Yes, we offer size exchanges within 30 days of purchase. Please
+            initiate the exchange through your account or contact our customer
+            service team for assistance.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Do you offer student discount?</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Yes, we offer a 10% student discount. To avail this, please verify
+            your student status through our verification partner during
+            checkout.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>How to Create Account?</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Creating an account is easy! Click on the user icon in the top right
+            corner, then select "Create Account." Fill in your details, verify
+            your email, and you're all set!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter container">
+    <h2>Subscribe to Our Newsletter to Get Updates to Our Latest Collection</h2>
+    <p>Get 20% off on your first order just by subscribing to our newsletter</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <%- include("includes/footer.ejs") %>
+  <script src="/script.js"></script>
+</body>
